@@ -3,7 +3,7 @@
 import { db } from "@/lib/prisma";
 import { auth } from "@clerk/nextjs/server";
 import { revalidatePath } from "next/cache";
-import aj from "@/lib/arcjet";
+import aj from "@/app/api/arcjet/arcjet";
 
 const serializeDecimal = (obj) => {
   const serialized = { ...obj };
